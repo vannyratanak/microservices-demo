@@ -12,6 +12,8 @@ If you’re using this demo, please **★Star** this repository to show your int
 
 **Note to Googlers:** Please fill out the form at [go/microservices-demo](http://go/microservices-demo).
 
+[![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.svg)](https://ssh.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https%3A%2F%2Fgithub.com%2Fvannyratanak%2Fmicroservices-demo&shellonly=true&cloudshell_image=gcr.io/ds-artifacts-cloudshell/deploystack_custom_image)
+
 ## Architecture
 
 **Online Boutique** is composed of 11 microservices written in different
