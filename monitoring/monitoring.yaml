@@ -1,0 +1,5 @@
+# Create a file named 'namespace.yaml' with the following content
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: monitoring
