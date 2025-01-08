@@ -1,0 +1,7 @@
+version: '3'
+services:
+  locust:
+    build: .
+    environment:
+      - FRONTEND_ADDR=34.140.201.4
+      - USERS=10
