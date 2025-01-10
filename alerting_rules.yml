@@ -1,0 +1,18 @@
+groups:
+  - name: example-alerts
+    rules:
+      - alert: HighCPUUsage
+        expr: rate(process_cpu_seconds_total[1m]) > 0.9
+        for: 5m
+        labels:
+          severity: critical
+        annotations:
+          summary: "High CPU usage detected on instance {{ $labels.instance }}"
+
+      - alert: LowMemory
+        expr: node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes < 0.2
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Low memory available on instance {{ $labels.instance }}"
